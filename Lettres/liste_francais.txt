@@ -325,7 +325,7 @@ acquisition
 acquisitions
 acquit
 acquitter
-âcre
+acre
 acrobate
 acrobatie
 acrobatique
@@ -564,10 +564,9 @@ afrique
 agacement
 agacer
 agathe
-âge
-âge
-âgee
-âgees
+age
+agee
+agees
 agen
 agence
 agencement
@@ -576,8 +575,7 @@ agences
 agenda
 agent
 agents
-âges
-âges
+ages
 agglomerat
 agglomeration
 agglomerations
@@ -1100,7 +1098,7 @@ andrei
 andrieu
 androgeneses
 andropov
-âne
+ane
 aneantir
 aneantissement
 anecdote
@@ -1109,7 +1107,7 @@ anecdotique ment
 anemie
 anemique
 anemone de mer
-ânerie
+anerie
 anesthesiant
 anesthesie
 anesthesier
@@ -1295,7 +1293,7 @@ anxiete
 anxieux
 aorte
 aoun
-août
+aout
 apaisement
 apaiser
 apanage
@@ -2259,8 +2257,8 @@ baigner
 baigner dans
 baignoire
 bail
-bâillement
-bâiller
+baillement
+bailler
 bailleur
 bailleurs
 bain
@@ -2294,7 +2292,7 @@ balayer
 balbutier
 balcon
 baldaquin
-bâle
+bale
 baleine
 baleze
 balise
@@ -2473,20 +2471,20 @@ bataille
 batailles
 bataillon
 bataillons
-bâtard
+batard
 batavia
 bateau
 bateaux
 bath
-bâti
-bâtiment
-bâtiments
-bâtir
-bâtisse
-bâtisseur
-bâton
-bâtonnier
-bâtons
+bati
+batiment
+batiments
+batir
+batisse
+batisseur
+baton
+batonnier
+batons
 bats
 battage
 battambang
@@ -2550,7 +2548,7 @@ beige
 beigne
 bekaa
 bel
-bel âge
+bel age
 bel homme
 belarus
 biler
@@ -2763,8 +2761,8 @@ blair
 blaireau
 blaise
 blake
-blâme
-blâmer
+blame
+blamer
 blanc
 blanc de chaux
 blanc d'uuf
@@ -3168,12 +3166,12 @@ bruce
 bruine
 bruit
 bruits
-brûlant
-brûlante
-brûle
-brûlees
-brûler
-brûlure
+brulant
+brulante
+brule
+brulees
+bruler
+brulure
 brume
 brun
 brunch
@@ -3200,10 +3198,10 @@ bu
 buanderie
 bucarest
 buccal
-bûcher
-bûcheron
-bûcherons
-bûcheur
+bucher
+bucheron
+bucherons
+bucheur
 budapest
 budget
 budgetaire
@@ -3262,11 +3260,10 @@ cabine
 cabine telephonique
 cabinet
 cabinets
-câble
-câble
-câbles
-câbles
-câblot
+cable
+cables
+cables
+cablot
 caboche
 cabot
 caboter
@@ -3937,26 +3934,24 @@ chartres
 chartreuse
 chas
 chasse
-châsse
-chasse
 chassent
 chasser
 chasseur
 chasseurs
-châssis
+chassis
 chaste
 chastete
 chat
-châtaigne
-châtaignier
-châtain
-château
-château fort
+chataigne
+chataignier
+chatain
+chateau
+chateau fort
 chateaubriand
-châteaux
-châtelet
-châtier
-châtiment
+chateaux
+chatelet
+chatier
+chatiment
 chatouiller
 chatoyer
 chats
@@ -5567,20 +5562,20 @@ cousin
 cousine
 cousins
 coussin
-coût
-coûte
-coûte
+cout
+coute
+coute
 couteau
 couteaux
 coutelas
-coûtent
-coûter
-coûtera
-coûterait
-coûteuse
-coûteuses
-coûteux
-coûts
+coutent
+couter
+coutera
+couterait
+couteuse
+couteuses
+couteux
+couts
 coutume
 coutumes
 coutumier
@@ -5788,7 +5783,7 @@ crudite
 cruel
 cruelle
 cruellement
-crûment
+crument
 cruz
 csa
 cuba
@@ -7466,7 +7461,7 @@ due
 duel
 dues
 dumas
-dûment
+dument
 dunes
 dunkerque
 duo
@@ -10755,8 +10750,8 @@ hasard
 hasardeux
 hasards
 hassan
-hâte
-hâter
+hate
+hater
 hausse
 hausser
 hausses
@@ -10773,7 +10768,6 @@ hauts
 havane
 havas
 have
-hâve
 havel
 havre
 havresac
@@ -12634,7 +12628,7 @@ lancinant
 lancinante
 lanciner
 land
-länder
+lander
 landes
 lang
 langage
@@ -13322,7 +13316,7 @@ malappris
 malavise
 malchance
 maldonne
-mâle
+male
 malediction
 malencontreux
 malentendant
@@ -14385,8 +14379,8 @@ mouvemente
 mouvements
 mouvoir
 moyen
-moyen Âge
-moyenâgeux
+moyen age
+moyenageux
 moyennant
 moyenne
 moyennes
@@ -14403,7 +14397,7 @@ mugissement
 mule
 mules
 mulhouse
-müller
+muller
 multicolore
 multicolores
 multiforme
@@ -14440,14 +14434,13 @@ mur
 mûr
 muraille
 murdoch
-mûres
+mures
 muret
 muriel
-mûrir
+murir
 murmure
 murmurer
 murs
-mûrs
 musarder
 muscle
 muscles
@@ -15714,9 +15707,8 @@ pastoureau
 patate
 patates
 patauger
-pâte
-pâte
-pâtee
+pate
+patee
 patelin
 pateliner
 patent
@@ -20261,12 +20253,12 @@ souhaits
 souiller
 souillon
 souillure
-soûl
+soul
 soulage
 soulagement
 soulager
-soûlard
-soûlerie
+soulard
+soulerie
 souleve
 souleve
 soulevee
@@ -22601,7 +22593,7 @@ voulu
 voulue
 voulut
 vous
-voûte
+voute
 voyage
 voyager
 voyages
