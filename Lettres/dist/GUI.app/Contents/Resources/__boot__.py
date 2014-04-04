@@ -340,7 +340,7 @@ def _path_inject(paths):
     sys.path[:0] = paths
 
 
-_path_inject(['/Users/simongoffin/Desktop/My_app'])
+_path_inject(['/Users/simongoffin/Desktop/my_app/Lettres'])
 
 
 import re, sys
@@ -382,7 +382,7 @@ def _run():
     exec(compile(source, script, 'exec'), globals(), globals())
 
 
-DEFAULT_SCRIPT='/Users/simongoffin/Desktop/My_app/GUI.py'
+DEFAULT_SCRIPT='/Users/simongoffin/Desktop/my_app/Lettres/GUI.py'
 SCRIPT_MAP={}
 try:
     _run()
