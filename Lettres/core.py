@@ -20,6 +20,7 @@ class LettresProblem(Problem):
         self.dico={}
         self.symetrie=0
         self.solution=['']
+        self.taille=0
         goal=''
         Problem.__init__(self, init, goal)
 
@@ -35,30 +36,37 @@ class LettresProblem(Problem):
                 if len(valeur2)==1:
                     if not valeur1+valeur2 in self.dico:
                         self.dico[valeur1+valeur2]=1
-                        check=possible(valeur1,valeur2,self.c)
+                        check=possible(valeur1,valeur2,self.c,self.taille)
                         self.symetrie+=1
                         if check[0]:
                             newmove=temp[:]
                             newmove=newmove[0:newmove.index(valeur2)]+newmove[newmove.index(valeur2)+1:len(newmove)]
                             newmove=newmove+(valeur1+valeur2,)
-                            if check[1]>len(self.solution[0]):
+                            if check[1]>self.taille:
+                                self.taille=check[1]
                                 self.solution=[]
                                 self.solution.append(check[2])
-                            elif check[1]==len(self.solution[0]):
+                            elif check[1]==self.taille:
                                 self.solution.append(check[2])
                             etape=valeur1+' '+'+'+' '+valeur2+' '+'='+' '+valeur1+valeur2
                             yield (etape,newmove)
                         else: continue
                     
-def possible(valeur1,valeur2,c):
-    c.execute("SELECT * FROM Mots where Mot like "+"\'"+valeur1+valeur2+"%"+"\'"+" LIMIT 1;")
+def possible(valeur1,valeur2,c,taille):
+    seq=valeur1+valeur2
+    t=taille-len(seq)
+    if t>0:
+        for i in range(t+1):
+            seq=seq+"_"
+    c.execute("SELECT * FROM Mots where Mot like "+"\'"+seq+"%"+"\'"+" LIMIT 1;")
     r=c.fetchall()
     if len(r)>0:
-        c.execute("SELECT * FROM Mots where Mot like "+"\'"+valeur1+valeur2+"\'"+";")
-        mot=c.fetchall()
-        if len(mot)>0:
-            MOT=valeur1+valeur2
-            return [True,len(MOT),MOT]
+        if len(valeur1+valeur2)>=taille:
+            c.execute("SELECT * FROM Mots where Mot like "+"\'"+valeur1+valeur2+"\'"+";")
+            mot=c.fetchall()
+            if len(mot)>0:
+                MOT=valeur1+valeur2
+                return [True,len(MOT),MOT]
         return [True,-1,valeur1+valeur2]
     else:
         return [False,-1,'']
@@ -67,11 +75,12 @@ def run(tuple,connexion):
     
     problem=LettresProblem(tuple,connexion)
     #example of bfs search
-    #debut=time.time()
-    node=breadth_first_graph_search(problem)
+    debut=time.time()
+    #node=breadth_first_tree_search(problem)
+    node=depth_first_tree_search(problem)
     resultat=problem.solution
-    #fin=time.time()
-    #print fin-debut
+    fin=time.time()
+    print fin-debut
     problem.conn.commit()
     problem.c.close()
     return resultat
