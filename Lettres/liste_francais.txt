@@ -3788,7 +3788,7 @@ cet
 cette
 ceux
 ceuxci
-ceuxlà
+ceuxla
 cezanne
 chacun
 chacune
@@ -3808,7 +3808,7 @@ chairs
 chaise
 chaises
 chaland
-châle
+chale
 chalet
 chaleur
 chaleureuse
@@ -21239,12 +21239,12 @@ thaolandais
 thaolandaise
 thaolande
 the
-theâtral
-theâtrale
-theâtralement
-theâtrales
-theâtre
-theâtres
+theatral
+theatrale
+theatralement
+theatrales
+theatre
+theatres
 theiere
 thematique
 thematiques

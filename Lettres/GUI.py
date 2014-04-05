@@ -16,7 +16,7 @@ def calcul():
     arg8=ent8.get()
     arg9=ent9.get()
     tuple=(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9)
-    connexion = sqlite3.connect('dico_u.db')
+    connexion = sqlite3.connect('dico_p.db')
     v=run(tuple,connexion)
     if len(v)<5:
         for i in range(len(v),5):
