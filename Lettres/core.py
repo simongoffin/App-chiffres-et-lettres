@@ -55,7 +55,7 @@ def possible(valeur1,valeur2,taille):
     if seq in dic:
         if len(seq)>=taille and seq in box:
             MOT=dict_full[box[seq]]
-            return [True,len(MOT),MOT]
+            return [True,len(seq),MOT]
         return [True,-1,valeur1+valeur2]
     else:
         return [False,-1,'']
