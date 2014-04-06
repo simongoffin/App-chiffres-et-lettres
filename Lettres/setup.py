@@ -8,7 +8,7 @@ Usage:
 from setuptools import setup
 
 APP = ['GUI.py']
-DATA_FILES = ['dico_p.db']
+DATA_FILES = ['mon_dico_full.txt','mon_dico_full_a.txt']
 OPTIONS = {'argv_emulation': True}
 
 setup(

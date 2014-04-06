@@ -3,7 +3,7 @@
 import sys
 import os
 import time
-import sqlite3
+from dico import dic,box,dict_full
 
 root = os.path.dirname(__file__)
 rel_path = os.path.join("", "aima-python")
@@ -14,9 +14,7 @@ from search import *
 class LettresProblem(Problem):
 
 
-    def __init__(self,init,connexion):
-        self.conn=connexion
-        self.c = self.conn.cursor()
+    def __init__(self,init):
         self.dico={}
         self.symetrie=0
         self.solution=['']
@@ -36,7 +34,7 @@ class LettresProblem(Problem):
                 if len(valeur2)==1:
                     if not valeur1+valeur2 in self.dico:
                         self.dico[valeur1+valeur2]=1
-                        check=possible(valeur1,valeur2,self.c,self.taille)
+                        check=possible(valeur1,valeur2,self.taille)
                         self.symetrie+=1
                         if check[0]:
                             newmove=temp[:]
@@ -52,28 +50,18 @@ class LettresProblem(Problem):
                             yield (etape,newmove)
                         else: continue
                     
-def possible(valeur1,valeur2,c,taille):
+def possible(valeur1,valeur2,taille):
     seq=valeur1+valeur2
-    t=taille-len(seq)
-    if t>0:
-        for i in range(t+1):
-            seq=seq+"_"
-    c.execute("SELECT * FROM Mots where Mot like "+"\'"+seq+"%"+"\'"+" LIMIT 1;")
-    r=c.fetchall()
-    if len(r)>0:
-        if len(valeur1+valeur2)>=taille:
-            c.execute("SELECT * FROM Mots where Mot like "+"\'"+valeur1+valeur2+"\'"+";")
-            mot=c.fetchall()
-            if len(mot)>0:
-                MOT=valeur1+valeur2
-                return [True,len(MOT),MOT]
+    if seq in dic:
+        if len(seq)>=taille and seq in box:
+            MOT=dict_full[box[seq]]
+            return [True,len(MOT),MOT]
         return [True,-1,valeur1+valeur2]
     else:
         return [False,-1,'']
         
-def run(tuple,connexion):
-    
-    problem=LettresProblem(tuple,connexion)
+def run(tuple):
+    problem=LettresProblem(tuple)
     #example of bfs search
     debut=time.time()
     #node=breadth_first_tree_search(problem)
@@ -81,14 +69,11 @@ def run(tuple,connexion):
     resultat=problem.solution
     fin=time.time()
     print fin-debut
-    problem.conn.commit()
-    problem.c.close()
     return resultat
     
     
 if __name__ == "__main__":    
     tuple=('v','o','e','u','n','b','e','t','l')
-    connexion = sqlite3.connect('dico.db')
-    v=run(tuple,connexion)
+    v=run(tuple)
     print v
     
