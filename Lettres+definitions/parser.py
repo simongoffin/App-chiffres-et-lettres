@@ -34,17 +34,24 @@ class MyHTMLParser(HTMLParser):
 def aligne(liste):
     p=''
     b=0
+    par=0
     for mot in liste:
         for i in mot:
             if i==' ' and b==0:
                 p=p+i
                 b=1
             elif not i==' ' and not i=='.':
+                if i=='(':
+                    par=1
+                elif i==')':
+                    par=0
                 p=p+i
                 b=0
-            elif i=='.':
+            elif i=='.' and par==0:
                 p=p+i
                 return p[1:len(p)]
+            elif i=='.' and par==1:
+                p=p+i
             elif i=='\n':
                 return p[1:len(p)]
     return p[1:len(p)]
