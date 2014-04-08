@@ -36,17 +36,20 @@ def calcul():
     arg9=ent9.get()
     arg10=ent10.get()
     tuple=(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10)
-    v=run(tuple)
-    ma_listbox.delete(0, END)
-    ma_listbox.insert(END, *v) 
-    if len(v)<5:
-        for i in range(len(v),5):
-            v.append('')
-    affichage1['text'] = ''
-    affichage2['text'] = ''
-    affichage3['text'] = ''
-    affichage4['text'] = ''
-    affichage5['text'] = ''
+    if arg1==arg2==arg3==arg4==arg5==arg6==arg7==arg8==arg9==arg10:
+        affichage1['text'] = 'www.polepositionbe.com'
+    else:
+        v=run(tuple)
+        ma_listbox.delete(0, END)
+        ma_listbox.insert(END, *v) 
+        if len(v)<5:
+            for i in range(len(v),5):
+                v.append('')
+        affichage1['text'] = ''
+        affichage2['text'] = ''
+        affichage3['text'] = ''
+        affichage4['text'] = ''
+        affichage5['text'] = ''
     
 def clic(evt): 
     affichage1['text'] = ''

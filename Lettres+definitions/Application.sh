@@ -1,3 +1,4 @@
 rm -rf build dist
 
-python setup.py py2app -A
+arch -32 python2.7 setup.py py2app -A
+
